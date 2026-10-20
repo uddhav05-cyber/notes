@@ -146,7 +146,7 @@ const uniq=a=>[...new Set(a)];
 const rid=()=>Math.random().toString(36).slice(2,9);
 const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 /* ── CLOUD CONFIG (Supabase). Leave both empty to run in local-only demo mode ── */
-const SB_URL="", SB_KEY="";
+const SB_URL="https://xxxx.supabase.co", SB_KEY="your-anon-key";
 /* ─────────────────────────────────────────────────────────────────────────── */
 const sb=(SB_URL&&SB_KEY&&window.supabase)?supabase.createClient(SB_URL,SB_KEY):null;
 const KEY="notes.v1";
